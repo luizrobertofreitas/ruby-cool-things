@@ -50,6 +50,6 @@ services:
       # Needed for the http server
       - "8080:8080"
       # Needed for the grpc server (if used)
-      - "8081:8081"
+      - "8082:8082"
       # Needed for the playground (Do not enable in prod!)
       - "3000:3000"

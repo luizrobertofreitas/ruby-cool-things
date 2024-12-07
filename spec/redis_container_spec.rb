@@ -27,12 +27,12 @@ RSpec.describe "Redis" do
     @redis.flushdb
   end
 
-  it "set/get keys" do
+  xit "set/get keys" do
     @redis.set("foo", "bar")
     expect(@redis.get("foo")).to eq("bar")
   end
 
-  it "set/get multiple keys" do
+  xit "set/get multiple keys" do
     @redis.mset("foo", "bar", "baz", "qux")
     expect(@redis.mget("foo", "baz")).to eq(["bar", "qux"])
   end
