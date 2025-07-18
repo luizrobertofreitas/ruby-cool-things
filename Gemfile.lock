@@ -19,6 +19,7 @@ GEM
     multi_json (1.15.0)
     multi_xml (0.7.1)
       bigdecimal (~> 3.1)
+    pg (1.5.9)
     rake (13.2.1)
     redis (5.3.0)
       redis-client (>= 0.22.0)
@@ -39,6 +40,8 @@ GEM
     rspec-support (3.13.2)
     testcontainers-core (0.2.0)
       docker-api (~> 2.2)
+    testcontainers-postgres (0.2.0)
+      testcontainers-core (~> 0.1)
     testcontainers-redis (0.2.0)
       testcontainers-core (~> 0.1)
 
@@ -50,10 +53,12 @@ DEPENDENCIES
   benchmark
   httparty
   logger
+  pg
   rake
   redis
   rspec
   testcontainers-core
+  testcontainers-postgres
   testcontainers-redis
 
 BUNDLED WITH
